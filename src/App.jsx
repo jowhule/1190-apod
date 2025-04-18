@@ -123,10 +123,10 @@ function App() {
         <br />
         <Typography
           component="h3"
-          variant="h3"
-          fontFamily={"Open Sans"}
+          variant="p"
           fontWeight={900}
           color={"#90caf9"}
+          fontSize={"3em"}
         >
           The Science Behind the Image
         </Typography>
@@ -244,10 +244,10 @@ function App() {
         <br />
         <Typography
           component="h3"
-          variant="h3"
-          fontFamily={"Open Sans"}
+          variant="p"
           fontWeight={900}
           color={"#90caf9"}
+          fontSize={"3em"}
         >
           The Light We Lost
         </Typography>
@@ -381,10 +381,10 @@ function App() {
         <br />
         <Typography
           component="h3"
-          variant="h3"
-          fontFamily={"Open Sans"}
+          variant="p"
           fontWeight={900}
           color={"#90caf9"}
+          fontSize={"3em"}
         >
           What Can We Do?
         </Typography>
@@ -457,40 +457,59 @@ function App() {
         </Typography>
         <SolutionsTabs />
 
-        <br />
-        <br />
-        <br />
-        <Typography
-          component="h3"
-          variant="h3"
-          fontFamily={"Open Sans"}
-          fontWeight={900}
-          color={"#90caf9"}
+        <Box
+          position="relative"
+          display="flex"
+          flexDirection={"column"}
+          alignItems={"center"}
+          height="80vh"
         >
-          The Bigger Picture and What’s Next
-        </Typography>
-
-        <blockquote class="otro-blockquote">
-          For my part I know nothing with any certainty, but the sight of the
-          stars makes me dream.
-          <span>Vincent van Gogh</span>
-        </blockquote>
-        <Typography>
-          The night sky has long revealed both the universe above and our
-          decisions here on earth. From ancient humans who used stars as guides,
-          through astronomers who seek answers from the stars, our relationship
-          with the night sky has always mattered. But due to modern, artificial
-          lighting, that relationship is being lost under artificial light.
-          Light pollution isn't just an issue of how things look, it's a
-          cultural, scientific, as well as environmental issue. As cities expand
-          and energy consumption rises, it is increasingly difficult to see
-          stars. But alternatives exist. By educating people, employing better
-          illumination, and planning, cities can shine without blocking out the
-          sky. <br></br>
-          <br></br> The issue is: can we grow without diminishing our ability to
-          appreciate how vast, old, and spectacular our world is? Or will we no
-          longer see stars in 20 years<sup>[17]</sup>?
-        </Typography>
+          <StarsCanvas />
+          <Box
+            position="absolute"
+            top="0"
+            maxWidth={"1000px"}
+            height="100%"
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"center"}
+          >
+            <Typography
+              component="h1"
+              variant="h1"
+              textAlign={"center"}
+              fontFamily={"Open Sans"}
+              fontWeight={900}
+            >
+              The Bigger Picture and What’s Next
+            </Typography>
+            <br />
+            <Typography component="p">
+              The night sky has long revealed both the universe above and our
+              decisions here on earth. From ancient humans who used stars as
+              guides, through astronomers who seek answers from the stars, our
+              relationship with the night sky has always mattered. But due to
+              modern, artificial lighting, that relationship is being lost under
+              artificial light. Light pollution isn't just an issue of how
+              things look, it's a cultural, scientific, as well as environmental
+              issue. As cities expand and energy consumption rises, it is
+              increasingly difficult to see stars. But alternatives exist. By
+              educating people, employing better illumination, and planning,
+              cities can shine without blocking out the sky.
+            </Typography>
+            <br></br>
+            <Typography component="p" textAlign={"center"}>
+              The issue is: can we grow without diminishing our ability to
+              appreciate how vast, old, and spectacular our world is? Or will we
+              no longer see stars in 20 years<sup>[17]</sup>?
+            </Typography>
+            <blockquote class="otro-blockquote">
+              For my part I know nothing with any certainty, but the sight of
+              the stars makes me dream.
+              <span>Vincent van Gogh</span>
+            </blockquote>
+          </Box>
+        </Box>
 
         <br />
         <br />
