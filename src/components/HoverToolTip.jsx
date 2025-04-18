@@ -1,28 +1,21 @@
 import React from "react";
 import { Box, Tooltip, Typography } from "@mui/material";
 
-const CustomTooltipContent = () => (
-  <Box p={1}>
-    <Typography variant="body2" fontWeight="bold">
-      Fun Fact
-    </Typography>
-    <Typography variant="caption">
-      This is a cool place with amazing history.
-    </Typography>
-    <Box
-      component="img"
-      src="/path/to/tooltip-image.jpg"
-      alt="Tooltip visual"
-      width={100}
-      mt={1}
-      borderRadius={1}
-    />
-  </Box>
-);
+const CustomTooltipContent = ({ content }) => <Box p={1}>{content}</Box>;
 
-const HoverToolTip = ({ height = 200, width = 200, top = 0, left = 0 }) => {
+const HoverToolTip = ({
+  height = 200,
+  width = 200,
+  top = 0,
+  left = 0,
+  content,
+}) => {
   return (
-    <Tooltip title={<CustomTooltipContent />} arrow placement="top">
+    <Tooltip
+      title={<CustomTooltipContent content={content} />}
+      arrow
+      placement="top"
+    >
       <Box
         width={width}
         height={height}

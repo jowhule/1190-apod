@@ -37,6 +37,7 @@ function CountriesCarousel() {
                 src={src}
                 alt={`Slide ${index + 1}`}
                 width="100%"
+                borderRadius={"20px"}
               />
               <Typography position="absolute" zIndex={1} bottom="25px">
                 {countries[index]}
