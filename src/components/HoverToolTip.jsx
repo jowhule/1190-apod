@@ -35,6 +35,7 @@ const HoverToolTip = ({ height = 200, width = 200, top = 0, left = 0 }) => {
         justifyContent="center"
         alignItems="center"
         sx={{ cursor: "pointer" }}
+        backgroundColor={"transparent"}
       ></Box>
     </Tooltip>
   );
