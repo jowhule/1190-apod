@@ -5,6 +5,7 @@ import {
   Typography,
   AccordionDetails,
   AccordionSummary,
+  Slide,
 } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import StarsCanvas from "./components/StarsCanvas";
@@ -21,8 +22,6 @@ import ausPollution from "./assets/aus-light-pollution.png";
 import filterOne from "./assets/filter1.png";
 import filterTwo from "./assets/filter2.png";
 import bortleScale from "./assets/bortle-scale.png";
-import Divider from "@mui/material/Divider";
-
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
@@ -127,6 +126,7 @@ function App() {
           fontWeight={900}
           color={"#90caf9"}
           fontSize={"3em"}
+          id="science-behind"
         >
           The Science Behind the Image
         </Typography>
@@ -503,7 +503,7 @@ function App() {
               appreciate how vast, old, and spectacular our world is? Or will we
               no longer see stars in 20 years<sup>[17]</sup>?
             </Typography>
-            <blockquote class="otro-blockquote">
+            <blockquote className="otro-blockquote">
               For my part I know nothing with any certainty, but the sight of
               the stars makes me dream.
               <span>Vincent van Gogh</span>
