@@ -71,3 +71,70 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/*  */
+.blockquote {
+  padding: 60px 80px 40px;
+  position: relative;
+}
+.blockquote p {
+  font-size: 35px;
+  font-weight: 700px;
+  text-align: center;
+}
+
+.blockquote:before {
+  position: absolute;
+  top: 0;
+
+  content: "\f10d";
+  font-size: 200px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.blockquote::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid #bf0024;
+  height: 3px;
+  width: 200px;
+}
+
+.otro-blockquote {
+  font-size: 1.4em;
+  width: 60%;
+  margin: 50px auto;
+  font-family: inherit;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #90caf9;
+  line-height: 1.6;
+  position: relative;
+  background: #ededed;
+}
+
+.otro-blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #90caf9;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.otro-blockquote::after {
+  content: "";
+}
+
+.otro-blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}

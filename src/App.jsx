@@ -21,11 +21,13 @@ import ausPollution from "./assets/aus-light-pollution.png";
 import filterOne from "./assets/filter1.png";
 import filterTwo from "./assets/filter2.png";
 import bortleScale from "./assets/bortle-scale.png";
+import Divider from "@mui/material/Divider";
 
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
+import SolutionsTabs from "./components/SolutionsTabs";
 
 const darkTheme = createTheme({
   palette: {
@@ -58,7 +60,13 @@ function App() {
           flexDirection={"column"}
           justifyContent={"center"}
         >
-          <Typography component="h1" variant="h1" textAlign={"center"}>
+          <Typography
+            component="h1"
+            variant="h1"
+            textAlign={"center"}
+            fontFamily={"Open Sans"}
+            fontWeight={900}
+          >
             The Night Sky: <br />
             When Earth Becomes the Constellation
           </Typography>
@@ -113,7 +121,13 @@ function App() {
         <br />
         <br />
         <br />
-        <Typography component="h3" variant="h3">
+        <Typography
+          component="h3"
+          variant="h3"
+          fontFamily={"Open Sans"}
+          fontWeight={900}
+          color={"#90caf9"}
+        >
           The Science Behind the Image
         </Typography>
 
@@ -198,7 +212,7 @@ function App() {
           <Box flex={1}>
             <CountriesCarousel />
             <br />
-            <Typography component="p" variant="p">
+            <Typography component="p" variant="p" fontSize={"22px"}>
               <b>Distribution of Dark Zones</b>
             </Typography>
             <Typography component="p" variant="p">
@@ -229,7 +243,13 @@ function App() {
         <br />
         <br />
         <br />
-        <Typography component="h3" variant="h3">
+        <Typography
+          component="h3"
+          variant="h3"
+          fontFamily={"Open Sans"}
+          fontWeight={900}
+          color={"#90caf9"}
+        >
           The Light We Lost
         </Typography>
         <Typography component="p" variant="p">
@@ -360,9 +380,16 @@ function App() {
         <br />
         <br />
         <br />
-        <Typography component="h3" variant="h3">
-          The Light We Lost
+        <Typography
+          component="h3"
+          variant="h3"
+          fontFamily={"Open Sans"}
+          fontWeight={900}
+          color={"#90caf9"}
+        >
+          What Can We Do?
         </Typography>
+
         <Typography component="p" variant="p">
           Due to light pollution, it might mean that anyone who wishes to
           observe the stars have to travel further away from civilisation. While
@@ -409,8 +436,7 @@ function App() {
               >
                 blog
               </Link>{" "}
-              showcases more filters and examples with sliders for better
-              comparisons.
+              showcases more filters and examples.
             </Typography>
           </Box>
 
@@ -425,6 +451,45 @@ function App() {
             />
           </Box>
         </Box>
+        <br />
+        <Typography component="p" variant="p" fontSize={"22px"}>
+          <b>What Cities are Doing!</b>
+        </Typography>
+        <SolutionsTabs />
+
+        <br />
+        <br />
+        <br />
+        <Typography
+          component="h3"
+          variant="h3"
+          fontFamily={"Open Sans"}
+          fontWeight={900}
+          color={"#90caf9"}
+        >
+          The Bigger Picture and What’s Next
+        </Typography>
+
+        <blockquote class="otro-blockquote">
+          For my part I know nothing with any certainty, but the sight of the
+          stars makes me dream.
+          <span>Vincent van Gogh</span>
+        </blockquote>
+        <Typography>
+          The night sky has long revealed both the universe above and our
+          decisions here on earth. From ancient humans who used stars as guides,
+          through astronomers who seek answers from the stars, our relationship
+          with the night sky has always mattered. But due to modern, artificial
+          lighting, that relationship is being lost under artificial light.
+          Light pollution isn't just an issue of how things look, it's a
+          cultural, scientific, as well as environmental issue. As cities expand
+          and energy consumption rises, it is increasingly difficult to see
+          stars. But alternatives exist. By educating people, employing better
+          illumination, and planning, cities can shine without blocking out the
+          sky. The issue is: can we grow without diminishing our ability to
+          appreciate how vast, old, and spectacular our world is? Or will we no
+          longer see stars in 20 years (McKie, 2023)?
+        </Typography>
       </Box>
     </ThemeProvider>
   );
